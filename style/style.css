@@ -376,8 +376,26 @@ color: white;
 #navber .three-dot{
   display: block;
 }
+/*About the podcast*/
 
+#the-podcast{
+padding: 40px 20px;
+}
+.container-content h1{
+  font-size: 2rem;
+  height: 39px;
+}
+.overview{
+ padding: 40px 20px;
+gap: 40px;
+height: 48px;
+grid-template-columns: repeat(2,1fr);
 
+}
+.overview h1{
+font-size: 2.50rem;
+}
+/*why choose techwave responsive*/
 
 /*footer section responsive*/
   #footer-section{
