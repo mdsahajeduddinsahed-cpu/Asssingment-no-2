@@ -13,16 +13,21 @@ body{
   background-color: #1A0B2E;
   align-items: center;
 }
+#navber .three-dot{
+  display: none;
+}
 nav h1{
   color: white;
+
+ 
 }
 .gradient-color{
-  width: 219px;
-  height: 32px;
   background: linear-gradient(to right, #3F5EFB, #7C56CC, #CD4C8E, #FC466B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 nav li a{
   text-decoration: none;
   color: white;
@@ -298,7 +303,7 @@ color: white;
   gap: 5px;
 }
 .intru h1{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -362,4 +367,42 @@ color: white;
   color: white;
   line-height: 24px;
   font-size: 1rem;
+}
+@media screen and (max-width:576px){
+/*nevbar*/
+#navber .btn, .Menu{
+  display: none;
+}
+#navber .three-dot{
+  display: block;
+}
+
+
+
+/*footer section responsive*/
+  #footer-section{
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+  #footer-section h1{
+    width: 219px;
+    height: 32px;
+    font-size: 2rem;
+    padding-top:30px ;
+  }
+  .footer-icon{
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  font-size: .70rem;
+  padding-top: 20px;
+  }
+   .footer-icon img{
+    height: 15px;
+    width: 15px;
+   }
+  #footer-section p{
+    font-size: .70rem;
+  }
 }
