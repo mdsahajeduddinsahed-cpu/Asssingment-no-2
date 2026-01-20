@@ -68,6 +68,15 @@ position: relative;
  padding-top: 101px;
  position: relative;
 }
+.circle img{
+  animation: spin 10s linear infinite;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 .small-border{
   background-color: #00FF88;
   width: 50px;
@@ -287,6 +296,7 @@ color: white;
 .link-content{
   background-color: #250D44;
   padding: 24px 24px;
+
 
 }
 .link-content h2{
