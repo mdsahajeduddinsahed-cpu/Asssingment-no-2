@@ -69,14 +69,17 @@ position: relative;
  position: relative;
 }
 .microphone{
-  width: 116.67px;
-  height: 175px;
-  position: absolute;
+ 
+position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -100%);
 
 }
+.microphone img{
+  width: 116.67px;
+  height: 175px;}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -122,7 +125,7 @@ padding-top: 50px;
 padding-left: 200px;
 padding-right: 200px;
 padding-bottom: 80px;
-height: 646px;
+max-height: auto;
 }
 .container-content h1{
   padding-bottom: 16px;
@@ -157,7 +160,7 @@ grid-template-columns: repeat(4,1fr);
 .overview h1{
   font-weight: 900;
   height: 44px;
-  font-size: 4rem;
+  font-size: 3rem;
 color: #00FF88;
 
 }
@@ -168,8 +171,9 @@ color: #00FF88;
 
 
 #feature-item{
-  max-height: 1121px;
+  max-height: auto;
   background-color: #230E3D;
+ 
   padding: 120px 200px;
   
   
@@ -186,7 +190,7 @@ color: #00FF88;
 .feature-content{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,300px);
+  grid-template-rows: repeat(3,auto);
   gap: 30px;
 }
 #feature-item .audio{
@@ -376,6 +380,18 @@ color: white;
 #navber .three-dot{
   display: block;
 }
+#banner {
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+  #banner .circle img{
+    height:350px ;
+    transform: translateY(-30px);
+    
+  }
+
 /*About the podcast*/
 
 #the-podcast{
@@ -390,13 +406,40 @@ padding: 40px 20px;
 gap: 40px;
 height: 48px;
 grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,50px);
+margin-bottom:120px;
+
 
 }
 .overview h1{
 font-size: 2.50rem;
+margin: 0;
 }
 /*why choose techwave responsive*/
-
+#feature-item{
+  padding: 40px 20px;
+  max-height: auto;
+  
+}
+#feature-item h1{
+  font-size: 2rem;
+  padding-bottom: 16px;
+}
+.feature-content{
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+  gap: 16px;
+}
+/*featured episodes*/
+.explore{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: auto;
+  height: auto;
+}
+#feature-link{
+  padding: 40px 20px;
+}
 /*footer section responsive*/
   #footer-section{
     background-size: contain;
